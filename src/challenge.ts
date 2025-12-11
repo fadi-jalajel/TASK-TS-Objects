@@ -40,6 +40,13 @@ function addReview(
 ): ReviewedBook {
   // write your code here...
 
+
+if (!book.reviews){
+  book.reviews = [];
+}
+
+book.reviews.push({ reviewer, comment });
+
   return book;
 }
 
